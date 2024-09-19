@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.jim-nielsen.com/ios/512/weather-2021-12-07.png?rf=1024"
+    />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="cardContainer">
+        <div class="search">
+          <input id="input" type="search" placeholder="New Delhi" />
+          <button id="search_btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="weather" id="weather">
+          <img id="weather-icon" src="icon/weather.png" />
+          <h2 id="temperature">0</h2>
+          <h2 id="city">India</h2>
+          <div class="last">
+            <div class="humidity">
+              <img src="icon/weather.png" />
+              <div>
+                <h2 id="humidity">India</h2>
+                <h3 id="hm">Humidity</h3>
+              </div>
+            </div>
+            <div class="wind">
+              <img src="icon/wind.png" />
+              <div>
+                <h2 id="wind">India</h2>
+                <h3 id="wm">Wind Speed</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="weather.js"></script>
+</html>
