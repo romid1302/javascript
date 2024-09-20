@@ -34,7 +34,7 @@ async function checkWeather(inputValue) {
     temperature.innerHTML = Math.ceil(data.main.temp) + ` °C`;
     city.innerHTML = data.name;
     humidity.innerHTML = data.main.humidity + ` %`;
-    wind.innerHTML = Math.ceil(data.wind.speed) + `km/s`;
+    wind.innerHTML = Math.ceil(data.wind.speed) + `km/hr`;
     if (data.weather[0].main == "Clouds") {
       weatherIcon.src = "icon/clear-sky.png";
     } else if (data.weather[0].main == "Clear") {
